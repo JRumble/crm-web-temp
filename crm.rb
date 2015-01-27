@@ -13,7 +13,7 @@ get '/' do
 end
 
 get '/contact' do
-	@contacts = $rolodex.contact
+	@contacts = $rolodex.contacts
 	  #@ contacts[]
 	  # @contacts << Contact.new("Yehuda", "Katz", "yehuda@example.com", "Developer")
 	  # @contacts << Contact.new("Mark", "Zuckerberg", "mark@facebook.com", "CEO")
@@ -26,7 +26,7 @@ get '/contacts/new' do
 	erb :newcontact
 end
 
-post '/contacts' do
+post '/contact' do
 	contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
   	$rolodex.add_contact(contact)
   	redirect to('/contact')

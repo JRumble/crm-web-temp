@@ -3,7 +3,7 @@
 class Rolodex
 
 #require_relative './Contact.rb'
-
+attr_accessor :contacts
 
 	@@ids = 1001
 
