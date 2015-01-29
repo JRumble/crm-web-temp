@@ -8,7 +8,7 @@ $rolodex = Rolodex.new
 
 
 get '/' do
-	@crm_name = "Rumble's CRM"
+	@crm_name = "the Steelers Fan Club"
 	erb :index
 end
 
@@ -31,3 +31,8 @@ post '/contact' do
 	redirect to('/contact')
 end
 
+# delete '/contact:id' do
+# puts
+# params = {}
+# puts
+# end
