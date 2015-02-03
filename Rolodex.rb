@@ -1,4 +1,4 @@
-#Rolodex.rb
+
 
 class Rolodex
 
@@ -42,14 +42,15 @@ class Rolodex
 		@contacts
 	end
 
-	def find_contact(id_find)
-		@contacts.each 	do |contact| 
-			if id_find == contact.id.to_s
-				puts contact
-			else
-				"That contact does not exist, please try again."
-			end
-		end
+	def find(contact_id)
+    	@contacts.find {|contact| contact.id == contact_id }
+		# @contacts.each 	do |contact| 
+		# 	if id_find == contact.id.to_s
+		# 		puts contact
+		# 	else
+		# 		"That contact does not exist, please try again."
+		# 	end
+		# end
 	end
 
 	def display_attribute(attribute)
@@ -65,9 +66,8 @@ class Rolodex
 		end		
 	end
 
-	def delete(id)
-		del_id = find_contact(id_find)
-		@contacts.delete(del_id)				
-	end
+	def remove_contact(contact)
+    @contacts.delete(contact)
+  end
 end
 

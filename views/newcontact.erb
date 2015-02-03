@@ -1,57 +1,26 @@
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>New Contact</title>
-  </head> -->
-  <!-- <body> -->
+
   <h1>You are the Newest Fan if not the Biggest!</h1>
 
-  <!-- <form>
-    <table>
-      <tr>
-        <td align="right">First Name:</td>
-        <td align="left"><input type="text" name="first" /></td>
-      </tr>
-      <tr>
-        <td align="right">Last Name:</td>
-        <td align="left"><input type="text" name="last" /></td>
-      </tr>
-      <tr>
-        <td align="right">Email:</td>
-        <td align="left"><input type="text" name="email" /></td>
-        <tr>
-          <td align="right">Why I'm the biggest fan:</td>
-          <td align="left"><input type="text" name="note" /></td>
-        </tr>
-      </table> -->
-    <!-- <form action="/contacts" method="post">
-      <input type="text" name="first_name">
-      <input type="text" name="last_name">
-      <input type="text" name="email">
-      <input type="text" name="note"--> 
-      <div id="form1">
+     
       <form action="/contacts" method="post">       <!--must have these two attr - post does not send all of the information to the URL - sends the information in the body of the request-->
          <label for="first_name">First Name</label>
-         <input id="first_name" type="text" name="first" placeholder="e.g. Terry"/><br />    <!--type - creates a text box - name key value - the type and name create a key : value hash ids help with validation mandatory input value - creates a real value placeholder - e.g. not a real value more of a prompt-->
+         <input id="first_name" type="text" name="first_name" placeholder="e.g. Terry"/><br />    <!--type - creates a text box - name key value - the type and name create a key : value hash ids help with validation mandatory input value - creates a real value placeholder - e.g. not a real value more of a prompt-->
          <label for="last_name">Last Name</label>
-         <input id="last_name" type="text" name="last" placeholder="e.g. Bradshaw"/><br />
+         <input id="last_name" type="text" name="last_name" placeholder="e.g. Bradshaw"/><br />
          <label for="email">Email</label>
          <input id="email" type="text" name="email" placeholder="e.g. bestqb@beer.com"/><br />
          <label for="notes">Why I'm the biggest FAN</label>
          <!-- <input id="notes" type="text" name="note" placeholder="e.g. won 4 superbowls"/><br /> -->
           <textarea id="notes" type="text" name="note" placeholder="e.g. won 4 superbowls"/></textarea>
 
+        <input type="submit" name="Submit">
        <!--<button type="submit"/>-->   
-       </input type="image" src="http://www.punjabigraphics.com/images/23/steelers-logo.jpg" alt="Submit Button" title="Click to submit form"><!--type="submit" normally when not creating an image submit button-->
+       <!-- </input type="image" src="http://www.punjabigraphics.com/images/23/steelers-logo.jpg" alt="Submit Button" title="Click to submit form">
+      </div> -->
+       <!--type="submit" normally when not creating an image submit button-->
       <!--hidden field-->
       <!--</input type+"hidden" value="delete"-->
-
-
-
-
-
 
     </form>
 
@@ -59,7 +28,7 @@
 
 
 
-    </div>
+    
     <!--search is a good use of using get in a form because they want all the queries in the browsers but not when submitting a regular form - don't want to see all the queries in the URL-->
 
     
@@ -73,18 +42,4 @@
         clear: both;
     } -->
 
-   <!--  </style>
-</head>
-<body>
-<div class="container">
-<form>
- <label>First Name</label>
- <input type="text" name="first"><br />
- <label>Last Name</label>
- <input type="text" name="last"><br />
- <label>Email</label>
- <input type="text" name="email"><br />
-</form>
-</div> -->
-   <!-- </body> -->
-   <!-- </html> -->  
+   

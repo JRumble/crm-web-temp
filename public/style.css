@@ -1,50 +1,111 @@
-* {
+ *{ 
   box-sizing: border-box;
 }
-/*#container {
-    width:100%;
-    height:200px;
-}*/
-/*#one {
-    width:33.333%;
-    height:200px;
-    float:left;
-    background-color:red;
+
+body {
+    background: url(http://steffen-knoeller.de/img/bg-steel-2.png);
+    /*background: url(http://csszengarden.com/219/bg1.svg) no-repeat left top, url(http://csszengarden.com/219/bg2.svg) no-repeat right top;*/
+    background-attachment: fixed, fixed;
+    background-size: auto 100%, auto 100%;
+    font-family: Arial;
+    /*background-color: gray;*/
 }
-#two {
-    width:33.333%;
-    height:200px;
-    float:left;
-    background-color:yellow;*/
-/*}*/
-.container nav{
-    width: 33.3333333%;
-    height: auto;
-    float: left;
-    }
 
-# form1{
-    width: 33.3333333%;
-    height: auto;
-    float: left;
-    background-color: gray;
-    }
+/*img {
+    background: url(http://www.csszengarden.com/219/layer-frame.svg);
+    background-size: 520px auto, 660px auto no-repeat;
+}*/
 
-.container img{
-    width: 33.3333333%;
-    height: auto;
-    float: left;
-    }
+ 
+ h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;   
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: white;   
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 40px
+}
+
+ /*ul {
+    width: 100%;
+}*/
 
 ul li {
-	color: blue;
-	background-color: gray;
+    font-size: 20px;
+    margin: 20px 110px 20px 150px;
+    color: white;
+    text-align: center;
+    background-color: none;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-h1 {
-	text-align: center;
-	border: 5px solid;
-	background-color: black;
-	color: yellow;
+a {
+    color: white;
+    padding: 0px 5px 0px 5px;
+    background-color: black;
+    font-size:  15px;
+   /* display: block;*/
+    text-decoration: none;
+    list-style-type: none;
+    /*position: top center; */
+}
+a:hover {
+    background-color: maroon;
+}  
+
+form {
+    width: 80%;
+    margin: 0 auto;
 }
 
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label, textarea {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+    color: white;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+label + textarea {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+​
+footer {
+    color: gray;
+    margin-left: 50px;
+    clear: both;
+}
